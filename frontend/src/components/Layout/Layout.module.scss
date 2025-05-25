@@ -1,0 +1,14 @@
+.layout-top {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 64px auto;
+  }
+  
+  .layout-no-top {
+    width: 90%;
+    margin: 0px auto;
+  }
+  
