@@ -26,32 +26,29 @@ body {
   font-size: 50px;
 }
 
-.container1 {
+[class^="container"] {
   max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+[class^="container"]:nth-child(odd) {
   margin: 0 auto;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
-.container2 {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+[class^="container"]:nth-child(even) {
   margin: -60px auto 0 -125px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
+[class^="container"]:nth-child(odd):not(:first-child) {
+  margin: -60px auto 0 0;
+}
 
 .slot.top {
   height: 200px;
@@ -132,6 +129,50 @@ body {
 
 .item-h {
   background: #84cc16;
+}
+
+.item-i {
+  background: #f97316;
+}
+
+.item-j {
+  background: #8b5cf6;
+}
+
+.item-k {
+  background: #ec4899;
+}
+
+.item-l {
+  background: #14b8a6;
+}
+
+.item-m {
+  background: #f43f5e;
+}
+
+.item-n {
+  background: #6366f1;
+}
+
+.item-o {
+  background: #22c55e;
+}
+
+.item-p {
+  background: #eab308;
+}
+
+.item-q {
+  background: #a855f7;
+}
+
+.item-r {
+  background: #0ea5e9;
+}
+
+.item-s {
+  background: #f59e0b;
 }
 
 .item:has(.handle) {
